@@ -1,0 +1,14 @@
+<% include head %>  <!-- includes another template -->
+<ul>
+    <% articles.forEach((article) => { %> <!-- Loops over each article and render it -->
+        <li>
+            <a href="/articles/<%= article.id %>">
+                <%= article.title %> <!-- Includes the article's title as link text -->
+            </a>
+        </li>
+        <div>
+            <%= article.content %>
+        </div>
+    <% }) %>
+</ul>
+<% include foot %>
