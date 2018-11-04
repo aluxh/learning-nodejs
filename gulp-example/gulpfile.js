@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const sourcemaps = require('gulp-sourcemaps');
 const babel = require('gulp-babel');
 const concat = require('gulp-concat');
-
+const watch = require('gulp-watch');
 
 gulp.task('default', () => {
 	return gulp.src('app/*.jsx')
